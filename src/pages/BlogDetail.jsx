@@ -1,4 +1,4 @@
-
+import './blogcss/blogdetail.css'
 
 
 

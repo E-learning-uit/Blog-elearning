@@ -1,4 +1,4 @@
-
+import './blogcss/blog.css'
 
 
 
@@ -9,6 +9,9 @@ const Blog = ()=>{
         <>
 
         <h1>blog</h1>
+        <p>
+            dddasdddas
+        </p>
         </>
     )
 }
