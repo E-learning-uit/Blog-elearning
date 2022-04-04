@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Ellipse12 from '../assets/Ellipse12.png'
-
+import {Link} from 'react-router-dom'
 
 
 const Blog = () => {
@@ -9,11 +9,11 @@ const Blog = () => {
     ])
 
     return (
-        <div className="container mx-auto space-y-4">
+        <div className="container mx-auto space-y-4 p-5">
             <h1 className='text-[#003663] text-[31px] py-4 font-bold'>Blog</h1>
             {blog.map(item => (
-                <>
-                    <div className="rounded-2xl border-2 border-[#003663] px-4 py-4 hover:border-slate-400">
+                <Link to='/blog-detail'>
+                    <div className="rounded-2xl border-2 border-[#003663] px-4 py-4 hover:border-slate-400 my-4">
                         <div>                            
                             <p className='text-[black] text-[14px]'>
                                 <img className='inline' src={Ellipse12} alt="" /> Johnny Nguyen</p>
@@ -25,7 +25,7 @@ const Blog = () => {
                             long time. Of course, students or students all need it to see the class schedule, so that not
                             a single morning is forgotten...</p>
                     </div>
-                </>
+                </Link>
             ))}
         </div>
         
